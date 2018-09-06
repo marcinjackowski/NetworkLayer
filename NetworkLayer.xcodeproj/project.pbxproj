@@ -22,6 +22,11 @@
 		D68F22222141928F00942D58 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F22212141928F00942D58 /* NetworkResponse.swift */; };
 		D68F2224214192A100942D58 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F2223214192A100942D58 /* NetworkError.swift */; };
 		D68F2226214192BD00942D58 /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F2225214192BD00942D58 /* ProviderProtocol.swift */; };
+		D68F22292141931700942D58 /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F22282141931700942D58 /* URLSessionProvider.swift */; };
+		D68F222B2141934000942D58 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F222A2141934000942D58 /* URLSessionProtocol.swift */; };
+		D68F222E2141946A00942D58 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F222D2141946A00942D58 /* PostService.swift */; };
+		D68F22312141948500942D58 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F22302141948500942D58 /* Post.swift */; };
+		D68F22332141949000942D58 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F22322141949000942D58 /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,11 @@
 		D68F22212141928F00942D58 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		D68F2223214192A100942D58 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		D68F2225214192BD00942D58 /* ProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderProtocol.swift; sourceTree = "<group>"; };
+		D68F22282141931700942D58 /* URLSessionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
+		D68F222A2141934000942D58 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		D68F222D2141946A00942D58 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		D68F22302141948500942D58 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D68F22322141949000942D58 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,7 @@
 			children = (
 				D68F21EF2141905D00942D58 /* AppDelegate.swift */,
 				D68F21F12141905D00942D58 /* ViewController.swift */,
+				D68F222F2141947300942D58 /* Models */,
 				D68F221C214191C600942D58 /* Extensions */,
 				D68F220F214190AC00942D58 /* Networking */,
 				D68F2210214190B300942D58 /* Resources */,
@@ -117,6 +128,8 @@
 		D68F220F214190AC00942D58 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				D68F222C2141945F00942D58 /* Services */,
+				D68F22272141930500942D58 /* Provider */,
 				D68F22152141916300942D58 /* Enums */,
 				D68F22122141911B00942D58 /* Protocols */,
 			);
@@ -138,6 +151,7 @@
 			children = (
 				D68F22132141913A00942D58 /* ServiceProtocol.swift */,
 				D68F2225214192BD00942D58 /* ProviderProtocol.swift */,
+				D68F222A2141934000942D58 /* URLSessionProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -161,6 +175,31 @@
 				D68F221F2141926D00942D58 /* URLRequestExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D68F22272141930500942D58 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				D68F22282141931700942D58 /* URLSessionProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		D68F222C2141945F00942D58 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D68F222D2141946A00942D58 /* PostService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D68F222F2141947300942D58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D68F22302141948500942D58 /* Post.swift */,
+				D68F22322141949000942D58 /* Comment.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +311,12 @@
 				D68F21F22141905D00942D58 /* ViewController.swift in Sources */,
 				D68F22222141928F00942D58 /* NetworkResponse.swift in Sources */,
 				D68F22202141926D00942D58 /* URLRequestExtension.swift in Sources */,
+				D68F222B2141934000942D58 /* URLSessionProtocol.swift in Sources */,
+				D68F22312141948500942D58 /* Post.swift in Sources */,
+				D68F222E2141946A00942D58 /* PostService.swift in Sources */,
+				D68F22332141949000942D58 /* Comment.swift in Sources */,
 				D68F221B2141919F00942D58 /* ParametersEncoding.swift in Sources */,
+				D68F22292141931700942D58 /* URLSessionProvider.swift in Sources */,
 				D68F21F02141905D00942D58 /* AppDelegate.swift in Sources */,
 				D68F2224214192A100942D58 /* NetworkError.swift in Sources */,
 			);
