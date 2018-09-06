@@ -18,6 +18,10 @@
 		D68F22192141918500942D58 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F22182141918500942D58 /* Task.swift */; };
 		D68F221B2141919F00942D58 /* ParametersEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F221A2141919F00942D58 /* ParametersEncoding.swift */; };
 		D68F221E214191DA00942D58 /* URLComponentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F221D214191DA00942D58 /* URLComponentsExtension.swift */; };
+		D68F22202141926D00942D58 /* URLRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F221F2141926D00942D58 /* URLRequestExtension.swift */; };
+		D68F22222141928F00942D58 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F22212141928F00942D58 /* NetworkResponse.swift */; };
+		D68F2224214192A100942D58 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F2223214192A100942D58 /* NetworkError.swift */; };
+		D68F2226214192BD00942D58 /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F2225214192BD00942D58 /* ProviderProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		D68F22182141918500942D58 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		D68F221A2141919F00942D58 /* ParametersEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersEncoding.swift; sourceTree = "<group>"; };
 		D68F221D214191DA00942D58 /* URLComponentsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentsExtension.swift; sourceTree = "<group>"; };
+		D68F221F2141926D00942D58 /* URLRequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestExtension.swift; sourceTree = "<group>"; };
+		D68F22212141928F00942D58 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		D68F2223214192A100942D58 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D68F2225214192BD00942D58 /* ProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				D68F22132141913A00942D58 /* ServiceProtocol.swift */,
+				D68F2225214192BD00942D58 /* ProviderProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -139,6 +148,8 @@
 				D68F22162141917100942D58 /* HTTPMethod.swift */,
 				D68F22182141918500942D58 /* Task.swift */,
 				D68F221A2141919F00942D58 /* ParametersEncoding.swift */,
+				D68F22212141928F00942D58 /* NetworkResponse.swift */,
+				D68F2223214192A100942D58 /* NetworkError.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -147,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				D68F221D214191DA00942D58 /* URLComponentsExtension.swift */,
+				D68F221F2141926D00942D58 /* URLRequestExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -252,13 +264,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D68F2226214192BD00942D58 /* ProviderProtocol.swift in Sources */,
 				D68F22172141917100942D58 /* HTTPMethod.swift in Sources */,
 				D68F22142141913A00942D58 /* ServiceProtocol.swift in Sources */,
 				D68F22192141918500942D58 /* Task.swift in Sources */,
 				D68F221E214191DA00942D58 /* URLComponentsExtension.swift in Sources */,
 				D68F21F22141905D00942D58 /* ViewController.swift in Sources */,
+				D68F22222141928F00942D58 /* NetworkResponse.swift in Sources */,
+				D68F22202141926D00942D58 /* URLRequestExtension.swift in Sources */,
 				D68F221B2141919F00942D58 /* ParametersEncoding.swift in Sources */,
 				D68F21F02141905D00942D58 /* AppDelegate.swift in Sources */,
+				D68F2224214192A100942D58 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
