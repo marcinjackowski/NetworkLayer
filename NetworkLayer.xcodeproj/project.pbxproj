@@ -13,6 +13,7 @@
 		D68F21F72141906000942D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D68F21F62141906000942D58 /* Assets.xcassets */; };
 		D68F21FA2141906000942D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D68F21F82141906000942D58 /* LaunchScreen.storyboard */; };
 		D68F22052141906000942D58 /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F22042141906000942D58 /* NetworkLayerTests.swift */; };
+		D68F22142141913A00942D58 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68F22132141913A00942D58 /* ServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		D68F22002141906000942D58 /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D68F22042141906000942D58 /* NetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTests.swift; sourceTree = "<group>"; };
 		D68F22062141906000942D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D68F22132141913A00942D58 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +81,8 @@
 			children = (
 				D68F21EF2141905D00942D58 /* AppDelegate.swift */,
 				D68F21F12141905D00942D58 /* ViewController.swift */,
-				D68F21F32141905D00942D58 /* Main.storyboard */,
-				D68F21F62141906000942D58 /* Assets.xcassets */,
-				D68F21F82141906000942D58 /* LaunchScreen.storyboard */,
+				D68F220F214190AC00942D58 /* Networking */,
+				D68F2210214190B300942D58 /* Resources */,
 				D68F21FB2141906000942D58 /* Info.plist */,
 			);
 			path = NetworkLayer;
@@ -94,6 +95,32 @@
 				D68F22062141906000942D58 /* Info.plist */,
 			);
 			path = NetworkLayerTests;
+			sourceTree = "<group>";
+		};
+		D68F220F214190AC00942D58 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D68F22122141911B00942D58 /* Protocols */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D68F2210214190B300942D58 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D68F21F62141906000942D58 /* Assets.xcassets */,
+				D68F21F82141906000942D58 /* LaunchScreen.storyboard */,
+				D68F21F32141905D00942D58 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D68F22122141911B00942D58 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D68F22132141913A00942D58 /* ServiceProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D68F22142141913A00942D58 /* ServiceProtocol.swift in Sources */,
 				D68F21F22141905D00942D58 /* ViewController.swift in Sources */,
 				D68F21F02141905D00942D58 /* AppDelegate.swift in Sources */,
 			);
