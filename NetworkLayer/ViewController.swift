@@ -10,14 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private let sessionProvider = URLSessionProvider()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        getPosts()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func getPosts() {
+        sessionProvider.request(type: [Post].self, service: PostService.all) { response in
+            switch response {
+            case let .success(posts):
+                print(posts)
+            case let .failure(error):
+                print(error)
+            }
+        }
     }
 }
 
